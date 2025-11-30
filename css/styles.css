@@ -1,0 +1,46 @@
+:root{
+  --primary:#6f42c1;      /* purple-ish */
+  --accent:#8e2de2;       /* gradient end */
+  --bg:#f4f7fb;
+  --muted:#6c757d;
+}
+
+/* base */
+*{box-sizing:border-box}
+body{
+  font-family:'Poppins',sans-serif;
+  background:var(--bg);
+  color:#1e1e1e;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+}
+
+/* navbar tweaks */
+.navbar-brand{font-weight:700;letter-spacing:0.2px}
+.nav-cta{padding:0.45rem 0.9rem}
+
+/* hero */
+.hero{
+  background: linear-gradient(135deg,var(--primary),var(--accent));
+  color:white;
+  padding:5rem 0;
+  text-shadow: 0 6px 18px rgba(0,0,0,0.18);
+}
+
+/* cards */
+.card{border:0;border-radius:12px}
+
+/* responsive spacing */
+@media (max-width:576px){
+  .hero{padding:3rem 1rem}
+}
+
+/* small helpers */
+.lead{opacity:0.95}
+.text-muted{color:var(--muted) !important;}
+.btn-primary{
+  background:var(--primary);
+  border:0;
+  transition:background 0.3s ease;
+}
